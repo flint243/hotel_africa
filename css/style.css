@@ -2361,12 +2361,14 @@
       opacity: .4;
       background: #000000; }
     .video-hero .height-text {
-      height: 800px; }
+      height: 600px; 
+    }
     .video-hero .text h1 {
       font-size: 7vw;
       font-weight: 600;
       line-height: 1;
-      color: #fff; }
+      color: #fff; 
+    }
   
   .room-wrap {
     width: 100%;
@@ -3226,3 +3228,12 @@
       stroke-dasharray: 89, 200;
       stroke-dashoffset: -136px; } }
   
+
+      /*************************************************************************************/
+      .col-md-8.textVideo h1{
+        color:rgba(156, 98, 5, 0.947);
+      }
+
+      a.icon-inner svg.ionicon s-ion-icon{
+        font-size: 150px;
+      }
