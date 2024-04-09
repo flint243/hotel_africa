@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+footer, header, section {
+    display: block; }
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+/* section */
+.ftco-section {
+    padding: 6em 0;
+    position: relative;
+}
+
+.ftco-section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.dflex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*-----------------PAGE RESERVER partir gauche---------------------- */
+/* Gallary images */
+div.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.gallery-image {
+    flex: 0 0 auto;
+    width: 100%;
+    transition: transform 0.5s ease;
+    scroll-snap-align: start;
+}
+
+div.scroll-container img {
+    padding: 10px;
+}
+
+/* pour le commentaire des clients */
+
+.commentaire-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.commentaire {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* PAGE RESERVER PARTI RIGHT*/
+/*Box search */
+.sidebar-box {
+    margin-bottom: 30px;
+    padding: 25px;
+    font-size: 15px;
+    width: 100%;
+    float: left;
+    background: #fff;
+}
+
+.search-form .form-group {
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-form .form-group input {
+    padding-right: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+.search-form .icon-chercher {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer; 
+}
+
+/* Informations reservation-summary */
+.reservation-summary {
+    line-height: 21px;
+    padding: 19px 25px 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.basket-holder {
+    border-top: 1px solid gray;
+}
+
+.total-box {
+    padding: 18px 19px 12px;
+    background: #1b3330;
+    border-radius: 0 0 4px 4px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.total-box .box {
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.total-box .info {
+    font-size: 12px;
+    line-height: 16px;
+    color: yellow;
+}
+
+.total-box .button {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    max-width: 100%;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.reserve-button {
+    height: 42px;
+    background-color: yellowgreen;
+    border-radius: 40px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+   }
+
+/* -----------------------PAGE PAIEMENT ---------------------------*/
+
+/* PAGE PAIEMENT PARTI GAUCHE*/
+.content {
+    padding: 52px 0 0;
+    width: 100%;
+}
+
+.steps {
+    overflow: hidden;
+    padding-top: 10px;
+    margin-top: -10px;
+    position: relative;
+}
+
+.steps-nav {
+    margin: 0 0 8px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    line-height: 45px;
+    position: relative;
+}
+
+.steps-nav li {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.steps-nav span {
+    cursor: default;
+    display: inline-block;
+    vertical-align: top;
+    border: solid black 1px;
+    border-radius: 400px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 10px hsla(172, 7%, 57%, .3);
+    background: #fff;
+}
+
+.steps-nav .title {
+    display: block;
+    padding: 4px 0 0;
+}
+
+/* Box felicitation */
+.felicite {
+    position: fixed;
+    /* Fixed position to stay in place */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.felicite-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    font-size: 30px;
+    color: #f0f0f0;
+}
+
+
+
+/*Navigateur web*/
+header {
+    background: url('images/header.webp');
+    background-color: #333;
+    color: #fff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: inherit;
+}
+
+/* nhap */
+
+.nav-bar {
+    position: fixed;
+    margin-left: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* navbar dans scroll */
+.nav-bar.scrolled {
+    background-color:white;
+    color: #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+h3 .scrolled {
+    margin-top: 0;
+}
+
+.topnav .scrolled {
+    margin-top: 0;
+}
+
+.nav-link .scrolled {
+    color: #000;
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        margin-left: 0;
+    }
+    
+    .topnav a {
+        display: none;
+        padding: 0;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
