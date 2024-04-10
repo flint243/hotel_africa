@@ -69,6 +69,8 @@ window.onload = function() {
 
 
 /*------------------ FUNCTION RESERVER LOGIN SIGNUP -------------------------*/
+
+/* Quand click sur le button Reserver une chambre */
 function reserveRoom() {
     const userResponse = confirm("Avez-vous un compte ?");
     const sectionInfo = document.getElementById("sectionInfo");
@@ -104,7 +106,7 @@ document.getElementById('inscrire').addEventListener('click', function(event) {
 /* -------------------PAGE PAIEMENT-------------------------- */ 
 
  /* JS pour confirmation  */
-    function reserveRoom() {
+    function finReserve() {
         document.getElementById("feliciteBox").style.display = "flex";
     }
 
