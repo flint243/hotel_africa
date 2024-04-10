@@ -9,8 +9,8 @@ function myFunction() {
     } else {
         x.className = "topnav list-unstyled mt-5";
     }
-
 }
+
 /* function scroll window er navbar et logo scroll  */
 window.onscroll = function () {
     const nav = document.querySelector('.nav-bar');
@@ -20,24 +20,32 @@ window.onscroll = function () {
     else
     {
         nav.classList.remove('scrolled');
-      
     }
 };
 
+/* -----------------Page Réservation------------------------------ */
+
+/* function d'afficher la date actuelle dans la section de sélection de date */
+window.onload = function () {
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementById('arrival-date').value = today;
+};
+
+/* La fonction d'afficher les modifications des informations et le total du prix lorsque l'utilisateur change les valeurs. */
 function updateReservationSummary() {
     const arrivalDate = new Date(document.getElementById('arrival-date').value);
     const departureDate = new Date(document.getElementById('departure-date').value);
     const adults = parseInt(document.getElementById('adults').value, 10);
     const children = parseInt(document.getElementById('children').value, 10);
-    const taxeSejour = 4.88; // Taxe de séjour fixe
+    const taxeSejour = 4.88;
 
     // Calculer le nombre de nuits
-    const timeDiff = departureDate.getTime() - arrivalDate.getTime(); //milisecond
+    const timeDiff = departureDate.getTime() - arrivalDate.getTime();
     const nights = timeDiff / (1000 * 3600 * 24); // convert miliseconds to day
 
-    // Tarif par nuit (exemple)
+    // Tarif par nuit 
     const ratePerAdult = 99.00;
-    const ratePerChild = 49.50; // Tarif réduit pour les enfants
+    const ratePerChild = 49.50;
 
     // Calculer le total
     const total = (adults * ratePerAdult + children * ratePerChild) * nights + taxeSejour;
@@ -60,14 +68,7 @@ window.onload = function() {
 };
 
 
-
-
-
-
-
-
-
-/* FUNCTION RESERVER LOGIN SIGNUP */
+/*------------------ FUNCTION RESERVER LOGIN SIGNUP -------------------------*/
 function reserveRoom() {
     const userResponse = confirm("Avez-vous un compte ?");
     const sectionInfo = document.getElementById("sectionInfo");
@@ -98,3 +99,15 @@ document.getElementById('inscrire').addEventListener('click', function(event) {
     loginForm.style.display = "none";
 });
 
+
+
+/* -------------------PAGE PAIEMENT-------------------------- */ 
+
+ /* JS pour confirmation  */
+    function reserveRoom() {
+        document.getElementById("feliciteBox").style.display = "flex";
+    }
+
+    function closeFelicitationBox() {
+        document.getElementById("feliciteBox").style.display = "none";
+    }
