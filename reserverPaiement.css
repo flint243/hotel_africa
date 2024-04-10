@@ -23,6 +23,7 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
+ /*    max-width: 1440px; */
 }
 
 /* section */
@@ -388,12 +389,17 @@ header {
 /* nhap */
 
 .nav-bar {
-    position: fixed;
+    position: fixed;  /* Fixed position to stay in place */
     margin-left: 60px;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000; 
+}
+
+.navbar-title,
+.topnav {
+    margin-top: 3rem; 
 }
 
 .topnav a {
@@ -412,17 +418,15 @@ header {
 }
 
 /* navbar dans scroll */
+
 .nav-bar.scrolled {
     background-color:white;
     color: #000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-h3 .scrolled {
-    margin-top: 0;
-}
-
-.topnav .scrolled {
+.nav-bar.scrolled .navbar-title,
+.nav-bar.scrolled .topnav  {
     margin-top: 0;
 }
 
@@ -431,7 +435,7 @@ h3 .scrolled {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
     .nav-bar {
         margin-left: 0;
     }

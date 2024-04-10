@@ -1,3 +1,29 @@
+
+/* function responsive cua menu burger */
+
+function myFunction() {
+    const x = document.getElementById("myTopnav");
+    
+    if (x.className === "topnav list-unstyled mt-5") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav list-unstyled mt-5";
+    }
+
+}
+/* function scroll window er navbar et logo scroll  */
+window.onscroll = function () {
+    const nav = document.querySelector('.nav-bar');
+    if (window.pageYOffset > 250 ) {
+        nav.classList.add('scrolled');
+    }
+    else
+    {
+        nav.classList.remove('scrolled');
+      
+    }
+};
+
 function updateReservationSummary() {
     const arrivalDate = new Date(document.getElementById('arrival-date').value);
     const departureDate = new Date(document.getElementById('departure-date').value);
