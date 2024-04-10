@@ -1771,7 +1771,10 @@
       padding-right: 0;
       text-transform: uppercase;
       font-size: 16px;
-      letter-spacing: .1em; }
+      letter-spacing: .1em; 
+      background: #8080808a;
+      
+    }
     .ftco-navbar-light.scrolled {
       position: fixed;
       right: 0;
@@ -3240,4 +3243,17 @@
 
       iframe{
         height: 100%;
+      }
+
+      span.monToggle.hydrated img{
+        width: 200px;
+        color: red;
+      }
+
+      button img{
+        width: 20px;
+      }
+
+      .ftco-navbar-light .navbar-toggler {
+          padding-right: 10px !important;
       }
