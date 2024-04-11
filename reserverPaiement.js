@@ -105,7 +105,7 @@ document.getElementById('inscrire').addEventListener('click', function(event) {
 
 /* -------------------PAGE PAIEMENT-------------------------- */ 
 
- /* JS pour confirmation  */
+ /* JS pour box felicitation  */
     function finReserve() {
         document.getElementById("feliciteBox").style.display = "flex";
     }
