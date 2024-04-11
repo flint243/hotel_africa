@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <title>Accueil | LiVanHotel</title>
     <meta charset="utf-8" />
@@ -7,108 +7,24 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700"
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet"
     />
     <!--<link
       href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i"
       rel="stylesheet"
-    />-->
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/solid.min.css" />
-
-    <!--<link rel="stylesheet" href="css/owl.theme.default.min.css" />-->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <!--<link rel="stylesheet" href="css/aos.css" />-->
+    />
+    -->
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
-    <!--<link rel="stylesheet" href="css/bootstrap-datepicker.css" />-->
-    <link rel="stylesheet" href="css/jquery.timepicker.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
     
-    
-    <script nonce="d8fadcb7-d4ab-48d9-9c1d-d21702169c1f">
-      try {
-        (function (w, d) {
-          !(function (b, c, d, e) {
-            b[d] = b[d] || {};
-            b[d].executed = [];
-            b.zaraz = { deferred: [], listeners: [] };
-            b.zaraz.q = [];
-            b.zaraz._f = function (f) {
-              return async function () {
-                var g = Array.prototype.slice.call(arguments);
-                b.zaraz.q.push({ m: f, a: g });
-              };
-            };
-            for (const h of ["track", "set", "debug"])
-              b.zaraz[h] = b.zaraz._f(h);
-            b.zaraz.init = () => {
-              var i = c.getElementsByTagName(e)[0],
-                j = c.createElement(e),
-                k = c.getElementsByTagName("title")[0];
-              k && (b[d].t = c.getElementsByTagName("title")[0].text);
-              b[d].x = Math.random();
-              b[d].w = b.screen.width;
-              b[d].h = b.screen.height;
-              b[d].j = b.innerHeight;
-              b[d].e = b.innerWidth;
-              b[d].l = b.location.href;
-              b[d].r = c.referrer;
-              b[d].k = b.screen.colorDepth;
-              b[d].n = c.characterSet;
-              b[d].o = new Date().getTimezoneOffset();
-              if (b.dataLayer)
-                for (const o of Object.entries(
-                  Object.entries(dataLayer).reduce(
-                    (p, q) => ({ ...p[1], ...q[1] }),
-                    {}
-                  )
-                ))
-                  zaraz.set(o[0], o[1], { scope: "page" });
-              b[d].q = [];
-              for (; b.zaraz.q.length; ) {
-                const r = b.zaraz.q.shift();
-                b[d].q.push(r);
-              }
-              j.defer = !0;
-              for (const s of [localStorage, sessionStorage])
-                Object.keys(s || {})
-                  .filter((u) => u.startsWith("_zaraz_"))
-                  .forEach((t) => {
-                    try {
-                      b[d]["z_" + t.slice(7)] = JSON.parse(s.getItem(t));
-                    } catch {
-                      b[d]["z_" + t.slice(7)] = s.getItem(t);
-                    }
-                  });
-              j.referrerPolicy = "origin";
-              j.src =
-                "/cdn-cgi/zaraz/s.js?z=" +
-                btoa(encodeURIComponent(JSON.stringify(b[d])));
-              i.parentNode.insertBefore(j, i);
-            };
-            ["complete", "interactive"].includes(c.readyState)
-              ? zaraz.init()
-              : b.addEventListener("DOMContentLoaded", zaraz.init);
-          })(w, d, "zarazData", "script");
-        })(window, document);
-      } catch (e) {
-        throw (fetch("/cdn-cgi/zaraz/t"), e);
-      }
-    </script>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
-      id="ftco-navbar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html">LiVanHotel</a>
+    <header>
+    <nav  class="navbar">
+      <div class="contentNav">
+        <a class="titre" href="index.html">LiVanHotel</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -116,11 +32,10 @@
           data-target="#ftco-nav"
           aria-controls="ftco-nav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-        <img src="fonts/svg/menu.svg">  Menu
+          aria-label="Toggle navigation">
+        <img src="">  Menu
         </button>
-        <div class="collapse navbar-collapse" id="ftco-nav">
+        <div class="NavInt">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a href="rooms.html" class="nav-link">Chambres</a>
@@ -135,93 +50,66 @@
         </div>
       </div>
     </nav>
+  </header>
 
-    <div class="hero">
-      <div class="container-wrap d-flex justify-content-end align-items-end">
-        <a
-          href="https://www.youtube.com/watch?v=ism1XqnZJEg"
-          class="icon-video popup-vimeo d-flex justify-content-center align-items-center"
-        >
-        <span><ion-icon name="play-sharp"></ion-icon></span>
-        </a>
-      </div>
-      <section class="home-slider owl-carousel">
-        <div
-          class="slider-item"
-          style="background-image: url(images/header/façade1.png)"
-        >
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center">
-              <div class="col-md-8 ftco-animate">
-                <div class="text mb-5 pb-5">
-                  <h1 class="mb-3">LiVanHotel</h1>
-                  <h2>Bien plus qu'une simple experience...</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="slider-item"
-          style="background-image: url(images/header/piscine.jpg)"
-        >
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center">
-              <div class="col-md-8 ftco-animate">
-                <div class="text mb-5 pb-5">
-                  <h1 class="mb-3">Un souvenir Epic</h1>
-                  <h2>LiVanHotel &amp; Resort</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="container">
+      <section class="slideshow">
+						<a class="command_next_bt" href="#" title="Aller à la 2ème slide"><i class="fa fa-angle-left"></i></a>
+						<a class="command_prev_bt" href="#" title="Aller à la 1ère slide"></a>
+			
+				<div class="slider">
+					<figure>
+							<img src="images/header/facade.jpg" class="bg1" alt="facade" />	
+						<figcaption>	
+							<h2><span class="agency">WEBAGENCY</span>: UNE AGENCE PROFESSIONNELLE <br>A L'ECOUTE DE VOS PROJETS !</h2>
+							<p>Donnez vie à vos projets web !</p>
+							<a class="info_blue" href="#"><h3><i class="fa-solid fa-play"></i></h3></a>
+						</figcaption>
+					</figure>
+					<figure>
+							<img src="images/header/piscine.jpg" class="bg2" alt="piscine" />
+						<figcaption>	
+							<h2><span class="agency">WEBAGENCY</span> PORTE VOS PROJETS !</h2>
+							<p>Envie de donner de la voix à vos projets web?
+							Avec Webagency le monde vous écoute !</p>
+							<a class="info_blue" href="#"><h3><i class="fa-solid fa-play"></i></h3></a>
+						</figcaption>
+					</figure>
+				</div>
+				<span id="timeline"></span>
       </section>
-    </div>
-    <section class="ftco-booking ftco-section ftco-no-pt ftco-no-pb">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 pr-1 aside-stretch">
+
+    <section class="checks">
             <form action="#" class="booking-form">
-              <div class="row">
-                <div class="col-md d-flex py-md-4">
-                  <div
-                    class="form-group align-self-stretch d-flex align-items-end"
-                  >
+              <div class="checkIns">
+                <div class="col-md d-flex py-md-4 checkInside">
+                  <div class="form-group align-self-stretch d-flex align-items-end">
                     <div class="wrap bg-white align-self-stretch py-3 px-4">
                       <label for="#">Check-in Date</label>
                       <input
                         type="text"
                         class="form-control checkin_date"
-                        placeholder="Check-in date"
-                      />
+                        placeholder="Check-in date"/>
                     </div>
                   </div>
                 </div>
-                <div class="col-md d-flex py-md-4">
-                  <div
-                    class="form-group align-self-stretch d-flex align-items-end"
-                  >
+                <div class="col-md d-flex py-md-4 checkInside"><div
+                    class="form-group align-self-stretch d-flex align-items-end">
                     <div class="wrap bg-white align-self-stretch py-3 px-4">
                       <label for="#">Check-out Date</label>
                       <input
                         type="text"
                         class="form-control checkout_date"
-                        placeholder="Check-out date"
-                      />
+                        placeholder="Check-out date"/>
                     </div>
                   </div>
                 </div>
-                <div class="col-md d-flex py-md-4">
-                  <div
-                    class="form-group align-self-stretch d-flex align-items-end"
-                  >
+                <div class="col-md d-flex py-md-4 checkInside"
+                    class="form-group align-self-stretch d-flex align-items-end">
                     <div class="wrap bg-white align-self-stretch py-3 px-4">
                       <label for="#">Chambres</label>
                       <div class="form-field">
-                        <div class="select-wrap">
+                        <div class="select">
                           <div class="icon">
                             <span><ion-icon name="chevron-down-sharp"></ion-icon></span>
                           </div>
@@ -236,12 +124,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md d-flex py-md-4">
+                <div class="col-md d-flex py-md-4 checkInside">
                   <div
-                    class="form-group align-self-stretch d-flex align-items-end"
-                  >
+                    class="form-group align-self-stretch d-flex align-items-end">
                     <div class="wrap bg-white align-self-stretch py-3 px-4">
                       <label for="#">Guests</label>
                       <div class="form-field">
@@ -262,43 +148,34 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md d-flex">
+                <div class="col-md d-flex checkInsideEnd">
                   <div class="form-group d-flex align-self-stretch">
                     <a
                       href="#"
                       class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"
                       ><span
                         >Disponibilités<small>Meilleurs Prix !</small></span
-                      ></a
-                    >
+                      ></a>
                   </div>
                 </div>
               </div>
             </form>
-          </div>
-        </div>
-      </div>
     </section>
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-wrap">
+
+    <section class="services">
       <div class="container">
-        <div class="row no-gutters">
+        <div class="row no-gutters mesServices">
           <div class="col-md-3">
-            <a
-              href="#"
-              class="services-wrap img align-items-end d-flex"
-              style="background-image: url(images/CHAMBRES/img\ chambre\ 2.jpg)"
-            >
+            <a href="#"class="services-wrap img align-items-end d-flex" style="background-image: url(images/CHAMBRES/chambre2.jpg)">
+              <img src="images/CHAMBRES/chambre2.jpg" alt="">
               <div class="text text-center pb-2">
                 <h3>Suites speciales</h3>
               </div>
             </a>
           </div>
           <div class="col-md-3">
-            <a
-              href="#"
-              class="services-wrap img align-items-end d-flex"
-              style="background-image: url(images/PISCINE/piscine.jpg)"
-            >
+            <a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/PISCINE/piscine.jpg)">
+              <img src="images/PISCINE/piscine.jpg" alt="">
               <div class="text text-center pb-2">
                 <h3>Piscine</h3>
               </div>
@@ -308,10 +185,8 @@
             <a
               href="#"
               class="services-wrap img align-items-end d-flex"
-              style="
-                background-image: url(images/RESTO/restaurant-le-turquoise.jpg);
-              "
-            >
+              style="background-image: url(images/RESTO/restaurant-le-turquoise.jpg);">
+              <img src="images/RESTO/restaurant-le-turquoise.jpg" alt="">
               <div class="text text-center pb-2">
                 <h3>Restaurant</h3>
               </div>
@@ -319,9 +194,8 @@
           </div>
           <div class="col-md-3">
             <div
-              class="services-wrap services-overlay img align-items-center d-flex"
-              style="background-image: url(images/CHAMBRES/img\ chambre\ 4.jpg)"
-            >
+              class="services-wrap services-overlay">
+              <img src="images/CHAMBRES/img chambre 3.jpg" alt="">
               <div class="text text-center pb-2">
                 <h3 class="mb-0">Suites &amp; Chambres</h3>
                 <span>Chambres Speciales</span>
@@ -336,22 +210,21 @@
         </div>
       </div>
     </section>
-    <section class="ftco-section">
-      <div class="container">
+
+    <section class="ftco1">
+      <div class="contentLuxe">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <span class="subheading">Bienvenue au LiVanHotel</span>
             <h2 class="mb-4">Une nouvelle vision de l'Hôtel de luxe !</h2>
           </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md pr-md-1 d-flex align-self-stretch ftco-animate">
+        <div class="visionLuxeIn">
+          <div class="visonSolo">
             <div class="media block-6 services active py-4 d-block text-center">
               <div class="d-flex justify-content-center">
-                <div
-                  class="icon d-flex align-items-center justify-content-center"
-                >
-                  <span class="flaticon-reception-bell"></span>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M216 64c-13.3 0-24 10.7-24 24s10.7 24 24 24h16v33.3C119.6 157.2 32 252.4 32 368H480c0-115.6-87.6-210.8-200-222.7V112h16c13.3 0 24-10.7 24-24s-10.7-24-24-24H256 216zM24 400c-13.3 0-24 10.7-24 24s10.7 24 24 24H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H24z"/></svg>
                 </div>
               </div>
               <div class="media-body">
@@ -359,7 +232,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md px-md-1 d-flex align-self-stretch ftco-animate">
+          <div class="visonSolo">
             <div class="media block-6 services py-4 d-block text-center">
               <div class="d-flex justify-content-center">
                 <div
@@ -374,7 +247,7 @@
             </div>
           </div>
           <div
-            class="col-md px-md-1 d-flex align-sel Searchf-stretch ftco-animate"
+            class="visonSolo"
           >
             <div class="media block-6 services py-4 d-block text-center">
               <div class="d-flex justify-content-center">
@@ -389,7 +262,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md px-md-1 d-flex align-self-stretch ftco-animate">
+          <div class="visonSolo">
             <div class="media block-6 services py-4 d-block text-center">
               <div class="d-flex justify-content-center">
                 <div
@@ -403,7 +276,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md pl-md-1 d-flex align-self-stretch ftco-animate">
+          <div class="visonSolo">
             <div class="media block-6 services py-4 d-block text-center">
               <div class="d-flex justify-content-center">
                 <div
@@ -420,7 +293,8 @@
         </div>
       </div>
     </section>
-    <section class="ftco-section bg-light ftco-room">
+
+    <section class="ftcoRooms">
       <div class="container-fluid px-0">
         <div class="row no-gutters justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -428,14 +302,13 @@
             <h2 class="mb-4">Hotel Chambres Master</h2>
           </div>
         </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6">
+        <div class="compoChambres">
+          <div class="colVision">
             <div class="room-wrap">
               <div
-                class="img d-flex align-items-center"
-                style="background-image: url(images/BG/bg_4.jpg)"
-              >
-                <div class="text text-center px-4 py-4">
+                class="img d-flex align-items-center">
+                <img src="images/BG/bg_4.jpg" id="specialImg" alt="">
+                <div class="middleText text-center px-4 py-4">
                   <h2>Bienvenus au <a href="index.html">LiVan</a> Hotel</h2>
                   <p>
                     A small river named Duden flows by their place and supplies
@@ -445,15 +318,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="room-wrap d-md-flex">
+
+          <div class="colVision">
+            <div class="room-wrapFlex">
               <a
-                href="#"
-                class="img"
-                style="background-image: url(images/CHAMBRES/chambre.jpg)"
-              ></a>
+                href="#">
+              </a><img src="images/BG/bg_4.jpg"  alt="">
               <div class="half left-arrow d-flex align-items-center">
-                <div class="text p-4 p-xl-5 text-center">
+                <div class="textEtoileIn">
                   <p class="star mb-0">
                     <ion-icon name="star-sharp"></ion-icon>
                     <span><ion-icon name="star-sharp"></ion-icon></span>
@@ -476,15 +348,15 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="room-wrap d-md-flex">
+          <div class="colVision">
+            <div class="room-wrapFlexReverse">
               <a
                 href="#"
                 class="img order-md-last"
                 style="background-image: url(images/CHAMBRES/chambre2.jpg)"
-              ></a>
+              ></a><img src="images/BG/bg_4.jpg" alt="">
               <div class="half right-arrow d-flex align-items-center">
-                <div class="text p-4 p-xl-5 text-center">
+                <div class="textEtoileIn">
                   <p class="star mb-0">
                     <ion-icon name="star-sharp"></ion-icon>
                     <span><ion-icon name="star-sharp"></ion-icon></span>
@@ -507,15 +379,15 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="room-wrap d-md-flex">
+          <div class="colVision">
+            <div class="room-wrapFlexReverse">
               <a
                 href="#"
                 class="img order-md-last"
                 style="background-image: url(images/CHAMBRES/chambre3.jpg)"
-              ></a>
+              ></a><img src="images/BG/bg_4.jpg" alt="">
               <div class="half right-arrow d-flex align-items-center">
-                <div class="text p-4 p-xl-5 text-center">
+                <div class="textEtoileIn">
                   <p class="star mb-0">
                     <ion-icon name="star-sharp"></ion-icon>
                     <span><ion-icon name="star-sharp"></ion-icon></span>
@@ -538,15 +410,15 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="room-wrap d-md-flex">
+          <div class="colVision">
+            <div class="room-wrapFlex">
               <a
                 href="#"
                 class="img"
                 style="background-image: url(images/CHAMBRES/chambre4.jpg)"
-              ></a>
+              ></a><img src="images/BG/bg_4.jpg" alt="">
               <div class="half left-arrow d-flex align-items-center">
-                <div class="text p-4 p-xl-5 text-center">
+                <div class="textEtoileIn">
                   <p class="star mb-0">
                     <ion-icon name="star-sharp"></ion-icon>
                     <span><ion-icon name="star-sharp"></ion-icon></span>
@@ -569,15 +441,15 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="room-wrap d-md-flex">
+          <div class="colVision">
+            <div class="room-wrapFlex">
               <a
                 href="#"
                 class="img"
                 style="background-image: url(images/CHAMBRES/chambre.jpg)"
-              ></a>
+              ></a><img src="images/BG/bg_4.jpg" alt="">
               <div class="half left-arrow d-flex align-items-center">
-                <div class="text p-4 p-xl-5 text-center">
+                <div class="textEtoileIn">
                   <p class="star mb-0">
                     <ion-icon name="star-sharp"></ion-icon>
                     <span><ion-icon name="star-sharp"></ion-icon></span>
@@ -603,195 +475,29 @@
         </div>
       </div>
     </section>
-    <section class="ftco-section testimony-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Témoignages</span>
-            <h2 class="mb-4">Nos invités sont ravis</h2>
+<div class="textAvis">
+<h2>Témoignages</h2>
+<h1>Nos invités sont ravis</h1>
+</div>
+    <!-- SLIDER -->
+    <section id="slideShowAvis">
+      <div id="slider" class="slidere">
+          <div id="bandeauColor">
+              <div id="InfoSlider"></div>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8 ftco-animate">
-            <div class="row ftco-animate">
-              <div class="col-md-12">
-                <div class="carousel-testimony owl-carousel ftco-owl">
-                  <div class="item">
-                    <div class="testimony-wrap py-4 pb-5">
-                      <div
-                        class="user-img mb-4"
-                        style="background-image: url(images/visage/femme1.jpg)"
-                      >
-                        <span
-                          class="quote d-flex align-items-center justify-content-center"
-                        >
-                          <i class="icon-quote-left"></i>
-                        </span>
-                      </div>
-                      <div class="text text-center">
-                        <p class="star">
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                        </p>
-                        <p class="mb-4">
-                          A small river named Duden flows by their place and
-                          supplies it with the necessary regelialia. It is a
-                          paradisematic country, in which roasted parts of
-                          sentences fly into your mouth.
-                        </p>
-                        <p class="name">Nicole Dupont</p>
-                        <span class="position">Guests</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="testimony-wrap py-4 pb-5">
-                      <div
-                        class="user-img mb-4"
-                        style="background-image: url(images/visage/homme1.jpg)"
-                      >
-                        <span
-                          class="quote d-flex align-items-center justify-content-center"
-                        >
-                          <i class="icon-quote-left"></i>
-                        </span>
-                      </div>
-                      <div class="text text-center">
-                        <p class="star">
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                        </p>
-                        <p class="mb-4">
-                          A small river named Duden flows by their place and
-                          supplies it with the necessary regelialia. It is a
-                          paradisematic country, in which roasted parts of
-                          sentences fly into your mouth.
-                        </p>
-                        <p class="name">Nathan Smith</p>
-                        <span class="position">Guests</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="testimony-wrap py-4 pb-5">
-                      <div
-                        class="user-img mb-4"
-                        style="background-image: url(images/visage/femme2.jpg)"
-                      >
-                        <span
-                          class="quote d-flex align-items-center justify-content-center"
-                        >
-                          <i class="icon-quote-left"></i>
-                        </span>
-                      </div>
-                      <div class="text text-center">
-                        <p class="star">
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                        </p>
-                        <p class="mb-4">
-                          A small river named Duden flows by their place and
-                          supplies it with the necessary regelialia. It is a
-                          paradisematic country, in which roasted parts of
-                          sentences fly into your mouth.
-                        </p>
-                        <p class="name">Chantal Young</p>
-                        <span class="position">Guests</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="testimony-wrap py-4 pb-5">
-                      <div
-                        class="user-img mb-4"
-                        style="background-image: url(images/visage/homme3.jpg)"
-                      >
-                        <span
-                          class="quote d-flex align-items-center justify-content-center"
-                        >
-                          <i class="icon-quote-left"></i>
-                        </span>
-                      </div>
-                      <div class="text text-center">
-                        <p class="star">
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                        </p>
-                        <p class="mb-4">
-                          A small river named Duden flows by their place and
-                          supplies it with the necessary regelialia. It is a
-                          paradisematic country, in which roasted parts of
-                          sentences fly into your mouth.
-                        </p>
-                        <p class="name">Sinok Smith</p>
-                        <span class="position">Guests</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="testimony-wrap py-4 pb-5">
-                      <div
-                        class="user-img mb-4"
-                        style="background-image: url(images/person_1.jpg)"
-                      >
-                        <span
-                          class="quote d-flex align-items-center justify-content-center"
-                        >
-                          <i class="icon-quote-left"></i>
-                        </span>
-                      </div>
-                      <div class="text text-center">
-                        <p class="star">
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                          <ion-icon name="star-sharp"></ion-icon>
-                        </p>
-                        <p class="mb-4">
-                          A small river named Duden flows by their place and
-                          supplies it with the necessary regelialia. It is a
-                          paradisematic country, in which roasted parts of
-                          sentences fly into your mouth.
-                        </p>
-                        <p class="name">Nathan Smith</p>
-                        <span class="position">Guests</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ftco-section ftco-no-pt ftco-no-pb px-0">
+          <img src="" name="slideImg" class="slideImg" alt="Image du slider">
+  </section>
+<!-- FIN SLIDER -->
+
+
+
+    <section class="ftco-video">
       <div class="container-fluid px-0">
         <div class="row no-gutters justify-content-end">
           <div class="col-md-12">
             <div
               id="home"
-              class="video-hero"
-              style="
-                height: 800px;
-                background-image: url(images/header/façade1.png);
-                background-size: cover;
-                background-position: center center;
-              "
-            >
+              class="video-hero"><img src="images/header/facade.jpg"> 
               <a
                 class="player"
                 data-property="{videoURL:'https://youtu.be/REwgpZpSCT4?si=WwiurlXNSvExjLDV',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"
@@ -801,7 +507,7 @@
                   class="row justify-content-start d-flex align-items-end height-text"
                 >
                   <div class="col-md-8 textVideo">
-                    <div class="text">
+                    <div class="textVideo">
                       <h1>Le plus beau Palace du maghreb</h1>
                     </div>
                   </div>
@@ -812,26 +518,25 @@
         </div>
       </div>
     </section>
-    <section
-      class="ftco-section ftco-menu"
-      style="background-image: url(images/restaurant-pattern.jpg)"
-    >
-      <div class="container">
+
+    <section class="ftco-section ftco-menu"> 
+      <div class="containerMenu">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <span class="subheading">Restaurant</span>
             <h2>Restaurant</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
+        <div class="monMenu">
+          <div class="monMenuIn">
             <div class="pricing-entry d-flex ftco-animate">
+              <img src="images/menu/menu-1.jpg" alt="">
               <div
                 class="img order-md-last"
                 style="background-image: url(images/menu/menu-1.jpg)"
               ></div>
               <div class="desc pr-3 text-md-right">
-                <div class="d-md-flex text align-items-center">
+                <div class="alignerPrix">
                   <h3 class="order-md-last heading-left">
                     <span>Tarte aux mirtilles</span>
                   </h3>
@@ -846,11 +551,9 @@
             </div>
             <div class="pricing-entry d-flex ftco-animate">
               <div
-                class="img order-md-last"
-                style="background-image: url(images/menu/menu-2.jpg)"
-              ></div>
+                class="img order-md-last"> <img src="images/menu/menu-2.jpg" alt=""></div>
               <div class="desc pr-3 text-md-right">
-                <div class="d-md-flex text align-items-center">
+                <div class="alignerPrix">
                   <h3 class="order-md-last heading-left">
                     <span>Banana split</span>
                   </h3>
@@ -865,11 +568,9 @@
             </div>
             <div class="pricing-entry d-flex ftco-animate">
               <div
-                class="img order-md-last"
-                style="background-image: url(images/menu/menu-3.jpg)"
-              ></div>
+                class="img order-md-last"><img src="images/menu/menu-2.jpg" alt=""></div>
               <div class="desc pr-3 text-md-right">
-                <div class="d-md-flex text align-items-center">
+                <div class="alignerPrix">
                   <h3 class="order-md-last heading-left">
                     <span>PanCake aux fraises</span>
                   </h3>
@@ -884,11 +585,9 @@
             </div>
             <div class="pricing-entry d-flex ftco-animate">
               <div
-                class="img order-md-last"
-                style="background-image: url(images/menu/menu-4.jpg)"
-              ></div>
+                class="img order-md-last"><img src="images/menu/menu-2.jpg" alt=""></div>
               <div class="desc pr-3 text-md-right">
-                <div class="d-md-flex text align-items-center">
+                <div class="alignerPrix">
                   <h3 class="order-md-last heading-left">
                     <span>Boeuf rotie</span>
                   </h3>
@@ -902,14 +601,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img"
-                style="background-image: url(images/menu/menu-5.jpg)"
-              ></div>
+          <div class="monMenuIn">
+            <div class="pricing-entryReverse">
+              <img src="images/menu/menu-2.jpg" alt="">
+              <div class="img" style="background-image: url(images/menu/menu-5.jpg)"></div>
               <div class="desc pl-3">
-                <div class="d-md-flex text align-items-center">
+                <div class="alignerPrix">
                   <h3><span>Saumon grillé</span></h3>
                   <span class="price">$49.91</span>
                 </div>
@@ -919,14 +616,13 @@
                   </p>
                 </div>
               </div>
+              
             </div>
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img"
-                style="background-image: url(images/menu/menu-6.jpg)"
-              ></div>
+            <div class="pricing-entryReverse">
+              <img src="images/menu/menu-2.jpg" alt="">
+              <div class="img"style="background-image: url(images/menu/menu-6.jpg)"></div>
               <div class="desc pl-3">
-                <div class="d-md-flex text align-items-center">
+                <div class="alignerPrix">
                   <h3><span>Ratatouille</span></h3>
                   <span class="price">$20.00</span>
                 </div>
@@ -937,13 +633,12 @@
                 </div>
               </div>
             </div>
-            <div class="pricing-entry d-flex ftco-animate">
+            <div class="pricing-entryReverse">
+              <img src="images/menu/menu-2.jpg" alt="">
               <div
-                class="img"
-                style="background-image: url(images/menu/menu-7.jpg)"
-              ></div>
+                class="img"style="background-image: url(images/menu/menu-7.jpg)"></div>
               <div class="desc pl-3">
-                <div class="d-md-flex text align-items-center">
+                <div class="alignerPrix">
                   <h3><span>Cocktail sans alcool</span></h3>
                   <span class="price">$20.00</span>
                 </div>
@@ -954,13 +649,14 @@
                 </div>
               </div>
             </div>
-            <div class="pricing-entry d-flex ftco-animate">
+            <div class="pricing-entryReverse">
+              <img src="images/menu/menu-2.jpg" alt="">
               <div
                 class="img"
                 style="background-image: url(images/menu/menu-8.jpg)"
               ></div>
               <div class="desc pl-3">
-                <div class="d-md-flex text align-items-center">
+                <div class="alignerPrix">
                   <h3><span>Fraise &amp; Ananas</span></h3>
                   <span class="price">$10.00</span>
                 </div>
@@ -975,22 +671,21 @@
         </div>
       </div>
     </section>
-    <section class="ftco-section">
-      <div class="container">
+
+    <section class="groupArticles">
+      <div class="containerArticles">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <span class="subheading">Consulter notre Blog</span>
             <h2>Nouveaux articles</h2>
           </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
+        <div class="articlesFlex">
+          <div class="articleAnimate">
+            <div class="stretchArticle">
               <a
                 href="blog-single.html"
-                class="block-20"
-                style="background-image: url('images/hall2.jpg')"
-              >
+                class="block-20"><img src="images/balades/balade1.jpg" alt="" width="100%" height="250px">
               </a>
               <div class="text mt-3 text-center">
                 <div class="meta mb-2">
@@ -1012,13 +707,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
+          <div class="articleAnimate">
+            <div class="stretchArticle">
               <a
                 href="blog-single.html"
-                class="block-20"
-                style="background-image: url('images/spa2.jpg')"
-              >
+                class="block-20">
+                <img src="images/balades/balade1.jpg" alt="" width="100%" height="250px">
               </a>
               <div class="text mt-3 text-center">
                 <div class="meta mb-2">
@@ -1040,14 +734,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a
-                href="blog-single.html"
-                class="block-20"
-                style="background-image: url('images/chameaux.jpeg')"
-              >
-              </a>
+          <div class="articleAnimate">
+            <div class="stretchArticle">
+              <a href="blog-single.html" class="block-20"><img src="images/balades/balade1.jpg" alt="" width="100%" height="250px"></a>
               <div class="text mt-3 text-center">
                 <div class="meta mb-2">
                   <div><a href="#">July 03, 2019</a></div>
@@ -1079,13 +768,12 @@
             <h2><span>Instagram</span></h2>
           </div>
         </div>
-        <div class="row no-gutters">
+        <div class="instagramIn">
           <div class="col-sm-12 col-md ftco-animate">
             <a
               href="images/balades/sableVent.jpg"
-              class="insta-img image-popup"
-              style="background-image: url(images/balades/sableVent.jpg)"
-            >
+              class="insta-img image-popup">
+              <img src="images/balades/sableVent.jpg" width="100%" height="280px" alt="">
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
@@ -1094,9 +782,8 @@
           <div class="col-sm-12 col-md ftco-animate">
             <a
               href="images/balades/balon.jpeg"
-              class="insta-img image-popup"
-              style="background-image: url(images/balades/balon.jpeg)"
-            >
+              class="insta-img image-popup">
+             <img src="images/balades/balon.jpeg" width="100%" height="280px" alt=""> 
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
@@ -1105,9 +792,8 @@
           <div class="col-sm-12 col-md ftco-animate">
             <a
               href="images/balades/quad.jpg"
-              class="insta-img image-popup"
-              style="background-image: url(images/balades/quad.jpg)"
-            >
+              class="insta-img image-popup">
+             <img src="images/balades/quad.jpg" width="100%" height="280px" alt=""> 
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
@@ -1116,9 +802,8 @@
           <div class="col-sm-12 col-md ftco-animate">
             <a
               href="images/balades/romantik.jpg"
-              class="insta-img image-popup"
-              style="background-image: url(images/balades/romantik.jpg)"
-            >
+              class="insta-img image-popup">
+             <img src="images/balades/romantik.jpg" width="100%" height="280px" alt=""> 
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
@@ -1127,9 +812,8 @@
           <div class="col-sm-12 col-md ftco-animate">
             <a
               href="images/balades/surf.jpg"
-              class="insta-img image-popup"
-              style="background-image: url(images/balades/surf.jpg)"
-            >
+              class="insta-img image-popup">
+             <img src="images/balades/surf.jpg" width="100%" height="280px" alt=""> 
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
@@ -1199,30 +883,15 @@ Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/clou
 </footer>
 -->
 
-    <div id="ftco-loader" class="show fullscreen">
-      <svg class="circular" width="48px" height="48px">
-        <circle
-          class="path-bg"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke="#eeeeee"
-        />
-        <circle
-          class="path"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke-miterlimit="10"
-          stroke="#F96D00"
-        />
-      </svg>
-    </div>
+    
+  </div>
     <script src="js/jquery.min.js"></script>
+    <script src="js/slideClassAvis.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/5f0b4a92f3.js" crossorigin="anonymous"></script>
+    <!--
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1265,5 +934,6 @@ Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/clou
       data-cf-beacon='{"rayId":"86f2a01c2e29702b","version":"2024.3.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
       crossorigin="anonymous"
     ></script>
+    -->
   </body>
 </html>

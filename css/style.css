@@ -1279,7 +1279,7 @@
   
   .carousel {
     position: relative; }
-  
+  /*
   .carousel.pointer-event {
     -ms-touch-action: pan-y;
     touch-action: pan-y; }
@@ -1363,7 +1363,7 @@
           transition: none; } }
     .carousel-indicators .active {
       opacity: 1; }
-  
+  */
   @-webkit-keyframes spinner-border {
     to {
       -webkit-transform: rotate(360deg);
@@ -1828,7 +1828,7 @@
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase; }
-  
+  /*
   .hero-wrap {
     width: 100%;
     height: 600px;
@@ -2051,7 +2051,7 @@
           background: rgba(255, 255, 255, 0.4); }
           .owl-carousel.home-slider .owl-dots .owl-dot.active {
             background: #fff; }
-  
+  */
   .hero {
     height: 1000px;
     position: relative;
@@ -3257,3 +3257,111 @@
       .ftco-navbar-light .navbar-toggler {
           padding-right: 10px !important;
       }
+
+      /********************** SLIDER *************************************/
+
+#slide{
+  width:200%;
+  height:auto; 
+  background-color: red;
+}
+
+figure {float:left;}
+figure img{width:100%;float:left;}
+
+.home-slider figure{
+  position:relative;
+  width:50%;
+  margin:0px;
+  left:0px;
+  animation:slidy 15s infinite;
+}
+.home-slider figcaption{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:30%;
+    left:10%;
+    font-family:Roboto, Sans-serif;
+    font-size:1.6em; 
+    color:white;
+}
+
+.agency{color:#4bb1f2;}
+.info_blue h3:hover{border:2px solid #4bb1f2;}
+
+.info_blue h3{
+   width:120px;
+   padding:10px;
+   text-align:center;
+   background-color:#30b3ff78;
+   border-radius:3px;
+   font-size:0.8em;
+   box-shadow:2px 3px 9px black;
+}
+.home-slider figcaption p{font-size:0.6em;color:white;}
+
+.info_blue{text-decoration:none;color:white;}
+
+.command_next_bt ::before{/*Boutton gauche*/
+content"";
+width:12px;
+height:40px;
+padding:10px;
+color:white;
+font-size:280%;
+position:absolute;
+z-index:20;
+top:45%;
+left:0px;
+border-bottom-right-radius: 55px;
+border-top-right-radius: 55px;
+background-color: #827f7f;
+opacity:0.4
+}
+.command_prev_bt ::before{/*Boutton droit*/
+content:"";
+width:12px;
+height:40px;
+padding:10px;
+color:white;
+font-size:280%;
+border-bottom-left-radius: 55px;
+border-top-left-radius: 55px;
+background-color: #827f7f;
+opacity:0.4;
+position:absolute;
+z-index:20;
+top:45%;
+right:0;
+}
+
+@-webkit-keyframes slidy{
+0%, 50%{left:0%}
+60%, 90%{left:-50%}
+100% {left:0%}
+}
+@-moz-keyframes slidy{
+0%, 50%{left:0%}
+60%, 90%{left:-50%}
+100% {left:0%}
+}
+
+#timeline{
+position:absolute;
+z-index:6;
+background:#4bb1f2;
+left:0px;
+bottom:0px;
+height:5px;
+animation:timeliner 12s infinite;
+}
+
+@-moz-keyframes timeliner{
+0% ,40%{width:750px;}
+50%, 100%{width:100%;}
+}
+@-webkit-keyframes timeliner{
+0% ,40%{width:750px;}
+50%, 100%{width:100%;}
+}
