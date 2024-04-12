@@ -4,9 +4,20 @@
   padding: 0;
 }
 
-svg{
+h1, h2, h3, h4, h5{
+  font-family: "Playfair Display", Arial, serif;
+}
+i{
+  color: rgb(218, 190, 9);
+  font-size: 3em;
+}
+.icon-inner, .ionicon, svg{
   width: 60px;
-  fill: rgb(228, 224, 8);
+  fill: rgba(182, 145, 0, 0.8);
+}
+a{
+  text-decoration: none;
+  color: #212529;
 }
 
 html, body {
@@ -32,11 +43,11 @@ header{
   width: 100%;
   height: auto;
   position: fixed;
-  z-index: 100;
+  z-index: 20;
 }
 
 .navbar-toggler{
-  display: none;
+  display: block;
 }
       .navbar {
         position: relative;
@@ -54,7 +65,11 @@ header{
         padding: 1rem 0rem 1rem 1rem; 
         background-color: white;
       }
-     
+      a.titre {
+      font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+      }
       .contentNav{
         width: 100%;
         display: flex;
@@ -62,8 +77,24 @@ header{
         align-items: center;
         justify-content: space-around;
       }
+    ul.navbar-nav{
+      width: 120%;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: space-between;
+    }
     .nav-item{
       display: inline-block;
+    }
+    li.nav-item a{
+    font-size: 14px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 400;
+    opacity: 1 !important;
     }
 
     .aside-stretch{
@@ -73,11 +104,10 @@ header{
   /********************** SLIDER *************************************/
 .slideshow{
         width:100%;
-        height: 900px;
+        height: 1000px;
         position:relative;
         overflow:hidden;
         top:0px;
-        margin-bottom: 5px;
       }
 
 .slider{
@@ -93,34 +123,48 @@ figure img{
   height: 900px;
   float:left;
 }
-
+/*
 .slider figure{
   position:relative;
   width:50%;
   margin:0px;
   left:0px;
-  animation:slidy 15s infinite;
+  animation:fade1, fade2 5s infinite;
 }
+*/
 .slider figcaption{
-    width:100%;
+  display: flex;
+  justify-content: space-evenly;
+    width:80%;
     height:auto;
     position:absolute;
-    top:20%;
-    left:10%;
-    font-family:Roboto, Sans-serif;
+    top:250px;
+    left:0%;
+    font-family:"Poppins", Sans-serif;
     font-size:1.6em; 
     color:white;
+    padding: 30px;
 }
 
-.info_blue h3:hover{border:2px solid #4bb1f2;}
+.fa-play{
+  position: relative;
+  color: white;
+  font-size: 1.5em;
+}
+.info_blue h3:hover{
+  border:3px solid rgba(182, 146, 0, 0.378);
+  background-color: rgba(128, 128, 128, 0.363);
+}
 
 .info_blue h3{
+  position: absolute;
+  right: 0;
    width:120px;
    height: 120px;
    padding:40px 0px;
    border-radius: 50%;
    text-align:center;
-   background-color:#30b3ff78;
+   background-color:rgba(182, 145, 0, 0.8);
    font-size:0.8em;
    box-shadow:2px 3px 9px black;
 }
@@ -161,41 +205,84 @@ top:45%;
 right:0;
 }
 
-@keyframes slidy{
-0%, 50%{left:0%}
-60%, 90%{left:-50%}
-100% {left:0%}
+.bg1,.bg2,.bg3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-@keyframes slidy{
-0%, 50%{left:0%}
-60%, 90%{left:-50%}
-100% {left:0%}
+
+.bg1{
+  background-image:url("/./images/header/facade.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fade1 20s infinite;
 }
+
+.bg2{
+  background-image: url("/./images/header/piscine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fade2 30s infinite;
+}
+
+.bg3{
+  background-image: url("/./images/TERRASSE/vue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fade3 30s  infinite;
+}
+
+@keyframes fade1{
+0%{opacity:1}
+25%{opacity:1}
+75%{opacity:0}
+100%{opacity:1}
+}
+
+@keyframes fade2{
+  0%{opacity:0}
+  25%{opacity:1}
+  75%{opacity:0}
+  100%{opacity:0}
+  }
+  
+  @keyframes fade3{
+    0%{opacity:0}
+    25%{opacity:0}
+    75%{opacity:1}
+    100%{opacity:0}
+    }
 
 #timeline{
 position:absolute;
 z-index:6;
-background:#4bb1f2;
+background:rgba(182, 145, 0, 0.8);;
 left:0px;
 bottom:0px;
 height:5px;
-animation:timeliner 12s infinite;
+animation:timeliner 15s infinite;
 }
 
 @keyframes timeliner{
-0% ,40%{width:0px;}
-50%, 100%{width:100%;}
+0% ,50%{width:0px;}
+60%, 100%{width:100%;}
 }
+/*
 @keyframes timeliner{
-0% ,40%{width:0px;}
-50%, 100%{width:100%;}
-}
+  60% ,0%{width:0px;}
+  100%, 90%{width:100%;}
+  }
+*/
+
+/***********************************************************************************/
 
 .checks{
-  position: absolute;
-  margin-top: -300px;
+  width:1400px;
+  position: relative;
+  margin-top: -320px;
   padding: 10px 10px 10px 200px;
   background: rgba(182, 145, 0, 0.8);
+  margin-bottom: 139px;
 }
 
 .checkIns{
@@ -203,24 +290,39 @@ animation:timeliner 12s infinite;
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: auto 1fr auto;
   grid-auto-flow: row;
-  grid-column-gap: 25px;
-  column-gap: 25px;
+  grid-column-gap: 20px;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .checkInside{
-  width: 200px;
-  height: 100%;
-  padding: 35px;
+  width: 220px;
+  height: 120px;
+  padding: 40px 20px 60px 20px;
   background-color: white;
 }
 .checkInsideEnd{
+  text-align: center;
   width: 200px;
   height: 100%;
   padding: 30px;
   background-color: black;
 }
+.checkInsideEnd a span{
+  color: white;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*****************************************************************************************/
+
 .services{
   margin-left: auto;
   margin-right: auto;
@@ -235,13 +337,20 @@ animation:timeliner 12s infinite;
   text-align: center;
   margin-bottom: 50px;
 }
-.mesServices .text{
+.mesServices h3{
   position: relative;
   top: -50px;
-}
-.services-overlay .text{
+  font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+  }
+
+.chambreSpecialeText{
   position: relative;
-  top: -150px;
+  top: -100px;
+  color: white;
 }
 .services-wrap img{
   width: 100%;
@@ -259,6 +368,21 @@ animation:timeliner 12s infinite;
   flex-direction: column;
   position: relative;
 }
+.contentLuxeText{
+  margin-bottom: 50px;
+}
+.contentLuxeText h2{
+  margin-bottom: 50px;
+  font-family: "Playfair Display", Arial, serif;
+  font-size: 38px;
+    font-weight: 400;
+    position: relative;
+}
+.fa-bell-concierge{
+  position: relative;
+  color: rgb(218, 190, 9);
+  font-size: 3.5em;
+}
 .colVision{
   padding: 0px;
   background-color: yellow;
@@ -275,11 +399,16 @@ animation:timeliner 12s infinite;
 }
 .visonSolo{
   width: 200px;
-  height: 150px;;
+  height: 150px;
+  padding-top: 10px;
   align-self: center;
   background-color: #f8f9fa;
 }
+.visonSolo h3{
+font-family: "Playfair Display", Arial, serif;
+}
 
+/****************************************************************************/
 .half{
   width: 100%;
   text-align: center;
@@ -292,8 +421,15 @@ padding: 10px 40px;
 top: 20px;
 border: 1px solid black;
 }
-.ftcoRooms{
-  background-color: orange;
+.RoomsText{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.RoomsText h2{
+  font-family: "Playfair Display", Arial, serif;
+  font-size: 38px;
+    font-weight: 400;
+    position: relative;
 }
 .compoChambres{
   display: grid;
@@ -332,8 +468,14 @@ img#specialImg{
 .middleText {
   position: relative;
   text-align: center;
+  color: white;
+}
+.middleText h2{
+  position: relative;
+  text-align: center;
   z-index: 10;
   margin-top: -300px;
+  font-size: 40px;
 }
 .room-wrap img{
   width:500px;
@@ -349,12 +491,28 @@ img#specialImg{
   width: 50%;
   background-color: white;
 }
+.fa-quote-left{
+  position: absolute;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1em;
+  padding: 10px 12px ;
+  margin-left: -30px;
+  margin-top: 6%;
+}
+.fa-quote-left::after{
+  content:"";
+  
+  position: relative;
+  
+}
 
 .containerMenu{
-  background-image: url(images/menu/restaurant-pattern.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/./images/menu/restaurant-pattern.jpg");
   padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .monMenu{
@@ -366,6 +524,15 @@ img#specialImg{
   grid-column-gap: 10px;
   margin-left: auto;
   margin-right: auto;
+}
+.menuText{
+  text-align: center;
+  color: black;
+}
+.menuText h2{
+  font-size: 38px;
+    font-weight: 400;
+    position: relative;
 }
 
 .pricing-entry {
@@ -420,6 +587,17 @@ img#specialImg{
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
+  margin-bottom: 50px;
+}
+.articlesText{
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+}
+.articlesText h2{
+  font-size: 38px;
+    font-weight: 400;
+    position: relative;
 }
 .articlesFlex{
   display: grid;
@@ -432,14 +610,28 @@ img#specialImg{
   text-align: center;
 }
 
-.video-hero img{
+
+#home{
+  position: relative;
   width: 100%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
 }
-.textVideo{
+video{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  margin: 0px;
+}
+
+.textVideo h1{
   position: absolute;
-  margin-top: -20%;
+  top: 100px;
   margin-left: 2%;
   width: 80%;
+  color: white;
 }
 .textVideo{
   font-size: 2em;
@@ -452,6 +644,7 @@ img#specialImg{
   height: 400px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 #slider{
   width: auto;
@@ -495,6 +688,15 @@ img#specialImg{
 
 .instagram{
   width: auto;
+}
+.instagramText{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.instagramText h2{
+  font-size: 38px;
+    font-weight: 400;
+    position: relative;
 }
 .instagramIn{
   display: grid;
