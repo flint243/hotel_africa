@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+.etoile{
+  color: rgb(218, 190, 9);
+}
 
 h1, h2, h3, h4, h5{
   font-family: "Playfair Display", Arial, serif;
@@ -43,11 +46,25 @@ header{
   width: 100%;
   height: auto;
   position: fixed;
-  z-index: 20;
+  z-index: 30;
 }
 
 .navbar-toggler{
   display: block;
+  border: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .1em;
+    right: 0px;
+    background-color: black;
+}
+i.fa-bars{
+  font-size: 20px;
+  color: grey;
+  background-color: black;
 }
       .navbar {
         position: relative;
@@ -102,187 +119,69 @@ header{
       margin-top: 200px;
     }
   /********************** SLIDER *************************************/
-.slideshow{
-        width:100%;
-        height: 1000px;
-        position:relative;
-        overflow:hidden;
-        top:0px;
-      }
-
-.slider{
-  width:200%;
-  height: 100%;
-}
-
-figure {
-  float:left;
-}
-figure img{
-  width:100%;
-  height: 900px;
-  float:left;
-}
-/*
-.slider figure{
-  position:relative;
-  width:50%;
-  margin:0px;
-  left:0px;
-  animation:fade1, fade2 5s infinite;
-}
-*/
-.slider figcaption{
-  display: flex;
-  justify-content: space-evenly;
-    width:80%;
-    height:auto;
-    position:absolute;
-    top:250px;
-    left:0%;
-    font-family:"Poppins", Sans-serif;
-    font-size:1.6em; 
-    color:white;
-    padding: 30px;
-}
-
-.fa-play{
-  position: relative;
-  color: white;
-  font-size: 1.5em;
-}
-.info_blue h3:hover{
-  border:3px solid rgba(182, 146, 0, 0.378);
-  background-color: rgba(128, 128, 128, 0.363);
-}
-
-.info_blue h3{
-  position: absolute;
-  right: 0;
-   width:120px;
-   height: 120px;
-   padding:40px 0px;
-   border-radius: 50%;
-   text-align:center;
-   background-color:rgba(182, 145, 0, 0.8);
-   font-size:0.8em;
-   box-shadow:2px 3px 9px black;
-}
-.home-slider figcaption p{font-size:0.6em;color:white;}
-
-.info_blue{text-decoration:none;color:white;}
-
-.command_next_bt ::before{/*Boutton gauche*/
-content"";
-width:12px;
-height:40px;
-padding:10px;
-color:white;
-font-size:280%;
-position:absolute;
-z-index:20;
-top:45%;
-left:0px;
-border-bottom-right-radius: 55px;
-border-top-right-radius: 55px;
-background-color: #827f7f;
-opacity:0.4
-}
-.command_prev_bt ::before{/*Boutton droit*/
-content:"";
-width:12px;
-height:40px;
-padding:10px;
-color:white;
-font-size:280%;
-border-bottom-left-radius: 55px;
-border-top-left-radius: 55px;
-background-color: #827f7f;
-opacity:0.4;
-position:absolute;
-z-index:20;
-top:45%;
-right:0;
-}
-
-.bg1,.bg2,.bg3{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.bg1{
-  background-image:url("/./images/header/facade.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: fade1 20s infinite;
-}
-
-.bg2{
-  background-image: url("/./images/header/piscine.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: fade2 30s infinite;
-}
-
-.bg3{
-  background-image: url("/./images/TERRASSE/vue.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: fade3 30s  infinite;
-}
-
-@keyframes fade1{
-0%{opacity:1}
-25%{opacity:1}
-75%{opacity:0}
-100%{opacity:1}
-}
-
-@keyframes fade2{
-  0%{opacity:0}
-  25%{opacity:1}
-  75%{opacity:0}
-  100%{opacity:0}
+  #stage {
+    position: relative;
+    top:40px;
+    width: 100%;
+    height: 700px;
+    margin: 1em auto;
+    background-color: grey;
   }
-  
-  @keyframes fade3{
-    0%{opacity:0}
-    25%{opacity:0}
-    75%{opacity:1}
-    100%{opacity:0}
-    }
 
-#timeline{
-position:absolute;
-z-index:6;
-background:rgba(182, 145, 0, 0.8);;
-left:0px;
-bottom:0px;
-height:5px;
-animation:timeliner 15s infinite;
-}
-
-@keyframes timeliner{
-0% ,50%{width:0px;}
-60%, 100%{width:100%;}
-}
-/*
-@keyframes timeliner{
-  60% ,0%{width:0px;}
-  100%, 90%{width:100%;}
+  #stage a {
+    width: 100%;
+    height: 700px;
+    position: absolute;
   }
-*/
+  #stage a img {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  #stage a::after {
+    position: absolute;
+    left: 11px;
+    bottom: 11px;
+    padding: 2px 0;
+    width: calc(100% - 22px);
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    content: attr(title);
+    font-size: 1.1em;
+    color: #fff;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
 
 /***********************************************************************************/
 
 .checks{
   width:1400px;
-  position: relative;
+  position: absolute;
   margin-top: -320px;
   padding: 10px 10px 10px 200px;
   background: rgba(182, 145, 0, 0.8);
   margin-bottom: 139px;
+  z-index: 20;
 }
 
 .checkIns{
@@ -323,11 +222,12 @@ animation:timeliner 15s infinite;
 
 /*****************************************************************************************/
 
-.services{
+.presta{
   margin-left: auto;
   margin-right: auto;
+  background-color: red;
 }
-.mesServices{
+.mesPresta{
   width: 70%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -337,7 +237,7 @@ animation:timeliner 15s infinite;
   text-align: center;
   margin-bottom: 50px;
 }
-.mesServices h3{
+.mesPresta h3{
   position: relative;
   top: -50px;
   font-family: "Poppins", Arial, sans-serif;
@@ -377,6 +277,14 @@ animation:timeliner 15s infinite;
   font-size: 38px;
     font-weight: 400;
     position: relative;
+}
+.contentLuxe span{
+  font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: #b69100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .fa-bell-concierge{
   position: relative;
@@ -424,6 +332,14 @@ border: 1px solid black;
 .RoomsText{
   text-align: center;
   margin-bottom: 50px;
+}
+.RoomsText span{
+  font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: #b69100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .RoomsText h2{
   font-family: "Playfair Display", Arial, serif;
@@ -482,33 +398,6 @@ img#specialImg{
   height: 400px;
 }
 
-.textAvis{
-  text-align: center;
-  padding: 50px 0;
-  background-color: rgba(128, 128, 128, 0.081);
-}
-.testimonyIn{
-  width: 50%;
-  background-color: white;
-}
-.fa-quote-left{
-  position: absolute;
-  width: auto;
-  height: auto;
-  border-radius: 50%;
-  background-color: white;
-  font-size: 1em;
-  padding: 10px 12px ;
-  margin-left: -30px;
-  margin-top: 6%;
-}
-.fa-quote-left::after{
-  content:"";
-  
-  position: relative;
-  
-}
-
 .containerMenu{
   background-image: url("/./images/menu/restaurant-pattern.jpg");
   padding-bottom: 50px;
@@ -528,6 +417,14 @@ img#specialImg{
 .menuText{
   text-align: center;
   color: black;
+}
+.menuText span{
+  font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: #b69100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .menuText h2{
   font-size: 38px;
@@ -594,6 +491,14 @@ img#specialImg{
   margin-bottom: 50px;
   color: black;
 }
+.articlesText span{
+  font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: #b69100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 .articlesText h2{
   font-size: 38px;
     font-weight: 400;
@@ -637,28 +542,63 @@ video{
   font-size: 2em;
 }
 
+/********** AVIS ************************************************/
+
+.textAvis{
+  text-align: center;
+  padding: 70px 0 30px 0px;
+  background-color: rgba(128, 128, 128, 0.081);
+}
+.textAvis span{
+  font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: #b69100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.testimonyIn{
+  width: 50%;
+  background-color: white;
+}
+.fa-quote-left{
+  position: absolute;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1em;
+  padding: 10px 12px ;
+  margin-left: -30px;
+  margin-top: 4%;
+}
+.fa-quote-left::after{
+  content:"";
+  position: relative;
+}
 
 /*.......................  SLIDER  ..................*/
 #slideShowAvis{
   width: 100%;
-  height: 400px;
+  height: 600px;
   position: relative;
   overflow: hidden;
+  background-color: rgba(128, 128, 128, 0.081);
   margin-bottom: 50px;
 }
 #slider{
   width: auto;
   height: 100%;
   position: relative;
+  top: 20%;
   text-align: center;
   transition: all 1s;
 }
 .slideImg{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   position: relative;
   top: 0%;
-  margin-bottom: 10px;
   border-radius: 50%;
 }
 
@@ -666,16 +606,15 @@ video{
   width: 100%;
   height: auto;
   position: relative;
-  top: 60%;
+  top: 5%;
   margin-left: 0px;
   text-align: center;
   padding: 10px;
-  background-color: grey;
   z-index: 1;
 }
 #InfoSlider{
   width: auto;
-  height: auto;
+  height: 100%;
   position: relative;
   top: 0px;
   margin-left: 0%;
@@ -685,9 +624,23 @@ video{
   color:white;
   transition:all 2s;
 }
+.nomSlide{
+  font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #000000;
+}
 
 .instagram{
   width: auto;
+}
+.instagramText .subheading{
+  font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: #b69100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .instagramText{
   text-align: center;
@@ -703,4 +656,135 @@ video{
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: auto 1fr auto;
   grid-auto-flow: row;
+}
+
+/********** responsive **********************/
+
+@media screen and (max-width: 430px){
+
+  .navbar{
+    height: 66px;
+    background-color: black;
+  }
+  .contentNav {
+    justify-content: space-between;
+  }
+  .contentNav a.titre {
+    color: white;
+  }
+  .NavInt{
+    display: none;
+  }
+
+  #stage {
+    position: absolute;
+    top: 40px;
+  }
+  #stage a img {
+    padding: 0px;
+    border: none;
+    background: inherit;
+  }
+
+  .checks{
+    width: 100%;
+   top: 1070px;
+   padding: 5px;
+  }
+  .checkIns{
+    grid-template-columns: repeat(1, 1fr);
+    padding: inherit;
+  }
+  .checkInside{
+    width: 100%;
+  }
+  .checkInsideEnd{
+    width: 100%;
+  }
+
+  .presta{
+    position: relative;
+    margin-top: 1400px;
+    width: 400px;
+
+  }
+  .mesPresta{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0px;
+    width: 100%;
+  }
+  .mesPresta.col-md-3{
+    width: 100%;
+  }
+
+  .contentLuxeText{
+    width: 100%;
+    background-color: green;
+  }
+  .contentLuxe{
+    display: block;
+    width: 430px;
+    margin-top: 15%;
+  }
+  .visionLuxeIn {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+}
+.visonSolo {
+  width: 100%;
+}
+
+.RoomsText{
+  width: 100%;
+  background-color: green;
+}
+.compoChambres {
+  grid-template-columns: repeat(1,1fr);
+}
+.room-wrapFlex {
+  display: block;
+}
+.room-wrapFlex img{
+  width: 100%;
+}
+.room-wrapFlexReverse {
+  display: block;
+}
+.room-wrapFlexReverse img{
+  width: 100%;
+}
+.half{
+  height: 360px;
+}
+
+.slideShowAvis{
+  width: 400px;
+}
+/*
+#home{
+  margin-left: 0px;
+}
+*/
+.textVideo h1{
+  font-size: 30px;
+}
+
+.monMenu {
+  grid-template-columns: repeat(1,1fr);
+}
+.pricing-entry{
+  display: block;
+}
+.pricing-entryReverse{
+  display: block;
+}
+
+.articlesFlex{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.instagramIn{
+  grid-template-columns: repeat(1, 1fr);
+}
+
 }
