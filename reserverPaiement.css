@@ -19,7 +19,7 @@ section {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: "Poppins", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -27,6 +27,7 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
+    max-width: 1472px;
 }
 
 /* Définir les variables les plus générales */
@@ -177,12 +178,11 @@ header {
 
 .nav-bar {
     position: fixed;
-    /* Fixed position to stay in place */
-    margin-left: 70px;
-    top: 0;
-    left: 0;
-    width: 100%;
     z-index: 6;
+    top: 0;               /* Align to the top */
+    left: 50%;            /* Move to 50% of the viewport width from the left */
+    transform: translateX(-50%); /* Shift it left by 50% of its own width */
+    width: 100%; 
 }
 
 .navbar-title,
@@ -474,6 +474,10 @@ footer {
     .topnav a {
         display: none;
         padding: 0;
+        border: solid 1px #b0b1b1;
+        border-radius: 5px;
+        background-color: #b0b1b1;
+        line-height: 3rem;
     }
 
     .topnav a.icon {

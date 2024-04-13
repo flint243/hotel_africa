@@ -1,6 +1,5 @@
-
+/* -----------------HEADER----------------------- */
 /* function responsive cua menu burger */
-
 function myFunction() {
     const x = document.getElementById("myTopnav");
     
@@ -48,11 +47,20 @@ function updateReservationSummary() {
     const ratePerChild = 49.50;
 
     // Calculer le total
-    const total = (adults * ratePerAdult + children * ratePerChild) * nights + taxeSejour;
+    const total = (adults * ratePerAdult + children * ratePerChild + taxeSejour) * nights ;
 
     // Mettre à jour l'affichage
-    document.querySelector('.reservation-summary p').textContent = `Pour ${nights} nuit(s), ${adults} adulte(s), ${children} enfant(s),`;
-    document.querySelector('.total-box span').textContent = `${total.toFixed(2)} €`;
+    
+    if (isNaN(nights))
+    {
+        document.querySelector('.total-box span').innerHTML = `0 €`;
+        document.querySelector('.reservation-summary p').innerHTML = `Pour <b> 0 </b> nuit(s), <b> ${adults} </b> adulte(s), <b> ${children} </b> enfant(s),`;
+    }
+    else {
+        document.querySelector('.reservation-summary p').innerHTML = `Pour <b>  ${nights} </b> nuit(s), <b> ${adults} </b> adulte(s), <b> ${children} </b> enfant(s),`;
+        document.querySelector('.total-box span').innerHTML = `<b> ${total.toFixed(2)} </b> €`;
+    }
+    
 }
 
 // Ajouter des écouteurs d'événements pour mettre à jour le résumé lors de la modification des champs
@@ -100,16 +108,3 @@ document.getElementById('inscrire').addEventListener('click', function(event) {
     signupForm.style.display = 'block';
     loginForm.style.display = "none";
 });
-
-
-
-/* -------------------PAGE PAIEMENT-------------------------- */ 
-
- /* JS pour box felicitation  */
-    function finReserve() {
-        document.getElementById("feliciteBox").style.display = "flex";
-    }
-
-    function closeFelicitationBox() {
-        document.getElementById("feliciteBox").style.display = "none";
-    }
