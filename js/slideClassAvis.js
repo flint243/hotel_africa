@@ -10,15 +10,15 @@ class SlideShowAvis{
             'images/visage/homme4.jpg'
           ];
           this.textImg = [
-            'Bienvenue chez <h1 id="deliceTropic" style="color:orange">Délice Tropical</h1><p>Nous sommes ravis de vous accueillir dans ce cadre somptueux</p> Profitez des délices gastronomiques tropicaux ainsi que des saveurs épicées.',
+            '<p class="msgAvis">J\'ai passé un séjour merveilleux et magique dans ce Palace<br> J\'y reviendrais à coup sur ! <br><br><span class="nomSlide">Nathalie Martin</span></p>',
            
-          '<h1></h1></h1>Consultez nos menus et voyagez au bout du monde<br> Nos cartes vous embarque dans une aventure gustative sans pareil.', 
+          '<p class="msgAvis">Mon entreprise a organisée un séminaire dans ce super Palace<br> Tout s\'est agréablement déroulé ! <br><br><span class="nomSlide">Paul smith</span></p>', 
          
-          '<h1></h1>Réservez votre table ainsi que votre jour et "Validez" en cliquant sur le bouton en haut à droite.',
+          '<p class="msgAvis">Mon amie m\'a organisée un anniversaire dans ce grand Palace<br> Tout s\'est agréablement déroulé ! <br><br><span class="nomSlide">Samantah Young</span></p>',
          
-          'Après votre réservation vous avez tout de même la possibilité de vous désister à votre convenance 48h avant.', 
+          '<p class="msgAvis">j\'ai organiséeun séjour pour ma femme dans cet Hotel<br> Tout s\'est agréablement déroulé ! <br><br><span class="nomSlide">Bozo le kéké</span></p>', 
          
-          '<h1 id="deliceTropic" style="color:orange">Délice Tropical</h1> vous souhaites une bonne ballade culinaire !'
+          '<p class="msgAvis">Mon entreprise a organisée un séminaire dans ce super Palace<br> Tout s\'est agréablement déroulé ! <br><br><span class="nomSlide">Henri le Premier</span></p>'
         ];
           
           this.speed = 3000; //vitesse de defilement en milliseconds
