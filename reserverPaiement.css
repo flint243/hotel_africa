@@ -95,6 +95,11 @@ ul {
     margin-bottom: 1rem;
 }
 
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -116,11 +121,6 @@ select {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-}
-
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
 }
 
 .dflex {
@@ -179,10 +179,12 @@ header {
 .nav-bar {
     position: fixed;
     z-index: 6;
-    top: 0;               /* Align to the top */
-    left: 50%;            /* Move to 50% of the viewport width from the left */
-    transform: translateX(-50%); /* Shift it left by 50% of its own width */
-    width: 100%; 
+    top: 0;
+    left: 50%;
+    /* Déplacer vers 50% de la largeur de la fenêtre d’affichage à partir de la gauche */
+    transform: translateX(-50%);
+    /* Décaler vers la gauche de 50% de sa propre width */
+    width: 100%;
 }
 
 .navbar-title,
@@ -257,7 +259,7 @@ header {
 /*------partir gauche-PAGE RESERVER --- */
 
 /* Gallary images */
- .scroll-container {
+.scroll-container {
     display: flex;
     white-space: nowrap;
     gap: 10px;
@@ -275,6 +277,7 @@ header {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -285,7 +288,14 @@ header {
     display: flex;
     flex-direction: row;
     gap: 20px;
-} 
+}
+
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+}
 
 .commentaire {
     background-color: #f0f0f0;
