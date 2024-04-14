@@ -59,7 +59,7 @@
                                 <img src="images/pexels-room1 (3).jpg" alt="Image 3" class="gallery-image">
                                 <img src="images/pexels-room 4.jpg" alt="Image 4" class="gallery-image">
                             </div>
-                            
+
                             <!--   title detail de room -->
                             <div class="col-md-12 mt-5">
                                 <h2>Luxury Chambre</h2>
@@ -108,9 +108,9 @@
                             <div class="row">
                                 <div>
                                     <form>
-                                        <div class="form-check">
+                                        <div>
                                             <input type="checkbox" class="form-check-input">
-                                            <label class="form-check-label" for="exampleCheck1">
+                                            <label>
                                                 <p>
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -121,9 +121,9 @@
                                                 </p>
                                             </label>
                                         </div>
-                                        <div class="form-check">
+                                        <div>
                                             <input type="checkbox" class="form-check-input">
-                                            <label class="form-check-label">
+                                            <label>
                                                 <p>
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -134,9 +134,9 @@
                                                 </p>
                                             </label>
                                         </div>
-                                        <div class="form-check">
+                                        <div>
                                             <input type="checkbox" class="form-check-input">
-                                            <label class="form-check-label">
+                                            <label>
                                                 <p>
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -147,9 +147,9 @@
                                                 </p>
                                             </label>
                                         </div>
-                                        <div class="form-check">
+                                        <div>
                                             <input type="checkbox" class="form-check-input">
-                                            <label class="form-check-label">
+                                            <label>
                                                 <p>
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -160,9 +160,9 @@
                                                 </p>
                                             </label>
                                         </div>
-                                        <div class="form-check">
+                                        <div>
                                             <input type="checkbox" class="form-check-input">
-                                            <label class="form-check-label">
+                                            <label>
                                                 <p>
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -283,7 +283,7 @@
             <form id="loginForm" class="col-lg-6" style="display: none;">
                 <h5>Connectez-vous</h5>
                 <div class="mb-3">
-                    <label for="floatingPassword">E-mail<span style="color: red;">*</span></label>
+                    <label for="floatingEmail">E-mail<span style="color: red;">*</span></label>
                     <input type="email" class="form-control" required>
                 </div>
                 <div class="mb-3">
@@ -294,8 +294,8 @@
                 </div>
                 <div class="mb-3 mt-3">
                     <button class="button" type="submit">Se connecter</button>
-                    <div class="password pt-3">Mot de<a href="#" style="color: gray;"> passe oublié?</a></div>
-                    <div class="password pt-4">Nouveau client ?<a href="#" style="color: rgb(11, 2, 2);" id="inscrire">
+                    <div class="pt-3">Mot de<a href="#" style="color: gray;"> passe oublié?</a></div>
+                    <div class="pt-4">Nouveau client ?<a href="#" style="color: rgb(11, 2, 2);" id="inscrire">
                             Créer votre compte</a></div>
                 </div>
             </form>
@@ -334,8 +334,7 @@
                                 </ul>
                             </div>
                             <!-- fin required -->
-                            <input type="password" class="form-control"
-                                pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.{8,})"
+                            <input type="password" class="form-control" pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.{8,})"
                                 title="Le mot de passe doit contenir au moins 8 caractères, incluant au moins un chiffre et un caractère spécial"
                                 required>
                             <!-- (?=.*\d): Assure qu'il y a au moins un chiffre dans la chaîne.
