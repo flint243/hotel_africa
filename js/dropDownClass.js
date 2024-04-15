@@ -1,20 +1,35 @@
-class dropdown{
+class Dropdown {
+  constructor() {
+    this.init();
+  }
 
-    constructor(){
+  init() {
+    $(".navbar-toggler").click(this.toggleMenu.bind(this));
+  }
 
-       if( $(".navbar-toggler").click(this.showToggle.bind(this)) ){
-        showToggle()
-          $(".nav-link").css({'display':'block'});
-          $(".navbar").css({'height':'200px'});
-          $("button.navbar-toggler").css({"position":"absolute", "marginTop":"-135px"})
-          $(".contentNav a.titre").css({"position":"absolute", "marginTop":"-135px"})
-        }
-       else {
-        $("i.fa-bars").click(this.hideToggle.bind(this));
-       }
-       hideToggle()
-        $(".nav-link").css({'display':'none'});
-      }
+  toggleMenu() {
+    if ($(".nav-link").css("display") === "none") {
+      this.showMenu();
+    } else {
+      this.hideMenu();
     }
-    
-new dropdown();
+  }
+
+  showMenu() {
+    $(".nav-link").css({"display": "block"});
+    $(".navbar").css({"height": "200px"});
+    $("button.navbar-toggler").css({"position": "absolute", "margin-top": "-135px","zIndex":"100"});
+    $(".contentNav a.titre").css({"position": "absolute", "margin-top": "-135px"});
+  }
+
+  hideMenu() {
+    $(".nav-link").css({"display": "none"});
+    $(".navbar").css({"height": "66px"});
+    $("button.navbar-toggler").css({"margin-top": "auto"});
+    $(".contentNav a.titre").css({"margin-top": "auto"});
+  }
+}
+
+$(document).ready(function() {
+  new Dropdown();
+});
