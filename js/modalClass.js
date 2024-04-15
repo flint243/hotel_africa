@@ -1,18 +1,18 @@
-class modal{
-
-    constructor(){
+class Modal {
+  constructor() {
       $(".imod1").click(this.show.bind(this));
-
       $(".closeModal").click(this.hide.bind(this));
+  }
 
-    }
+  show() {
+      $(".modalInsta1").addClass('show-modal');
+  }
 
-    show(){
-      $(".modalInsta1").css({'display':'block', 'zIndex':'50'});
-    }
-
-    hide(){
-      $(".modalInsta1").css({'display':'none'});
-    }
+  hide() {
+      $(".modalInsta1").removeClass('show-modal');
+  }
 }
-new modal();
+
+$(document).ready(function() {
+  new Modal();
+});
