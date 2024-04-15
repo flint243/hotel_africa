@@ -66,7 +66,7 @@ header{
   position: fixed;
   z-index: 30;
 }
-.navbar-toggler{
+.navbarToggle-toggler{
   display: none;
   border: none;
     color: rgba(255, 255, 255, 0.5) !important;
@@ -77,10 +77,10 @@ header{
     letter-spacing: .1em;
     right: 0px;
 }
-.navbar-nav.menuToggle{
+.navbarToggle-navToggle.menuToggle{
   display: none;
 }
-.navbar-toggler a.nav-link{
+.navbarToggle-toggler a.navToggle-linkToggle{
   color: red;
   position: absolute;
   top: 50px;
@@ -90,7 +90,7 @@ i.fa-bars{
   color: black;
   z-index: 30;
 }
-      .navbar {
+      .navbarToggleGen {
         position: relative;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -106,6 +106,9 @@ i.fa-bars{
         padding: 1rem 0rem 1rem 1rem; 
         background-color: white;
       }
+      a.titreToggle{
+        display: none;
+      }
       a.titre {
       font-weight: 700;
     font-size: 20px;
@@ -113,11 +116,16 @@ i.fa-bars{
       }
       .contentNav{
         width: 100%;
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: space-around;
+    padding: 10px 0px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: white;
+    justify-content: space-around;
       }
+    .titreToggle{
+      display: none;
+    }
     ul.navbar-nav{
       width: 120%;
       display: flex;
@@ -830,7 +838,7 @@ footer{
 .text-center p{
   position: relative;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .row_footer {
   display: grid;
@@ -863,18 +871,31 @@ footer a {
 
 @media screen and (max-width: 430px){
 
-  .navbar{
+  .navbarGenerale{
     height: 66px;
     padding: 10px 15px;
     background-color: black;
   }
   .contentNav {
+    width: auto;
+    padding: 0px;
+    background-color: black;
     justify-content: space-between;
-  }
-  .contentNav a.titre {
+}
+.contentNav a.titre{
+  display: none;
+}
+  .titreToggle {
+    display: block;
+    position: absolute;
     color: white;
+    z-index: 100;
   }
-  .navbar-toggler{
+  .navbarToggleGen{
+    background-color: black;
+  }
+  .navbarToggle-toggler{
+    position: absolute;
     display: block;
     border: none;
     color: rgba(255, 255, 255, 0.5) !important;
@@ -886,20 +907,18 @@ footer a {
     right: 0px;
     border-radius: 5px;
     background-color: #8080808a;
+    z-index: 100;
   }
-.contentNav a.titre{
-z-index: 100;
-}
-  ul.navbar-nav.menuToggle{
+
+  ul.navbarToggle-navToggle.menuToggle{
     width: 50%;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: -9px;
-    left: -10px;
-    background-color: black;
+    top: 70px;
+    left: 0px;
   }
-  ul.navbar-nav a.nav-link{
+  ul.navbarToggle-navToggle a.navToggle-linkToggle{
     position: relative;
     margin-top: 15px;
     left: 20px;
@@ -907,12 +926,12 @@ z-index: 100;
     padding: 0px;
     display: none;
   }
-  ul li.nav-item{
+  ul li.navToggle-itemToggle{
     position: relative;
     right:0px
   }
   
-  li.nav-item{
+  li.navToggle-itemToggle{
     position: relative;
   }
   .NavInt{

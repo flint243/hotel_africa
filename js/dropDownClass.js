@@ -4,11 +4,11 @@ class Dropdown {
   }
 
   init() {
-    $(".navbar-toggler").click(this.toggleMenu.bind(this));
+    $(".navbarToggle-toggler").click(this.toggleMenu.bind(this));
   }
 
   toggleMenu() {
-    if ($(".nav-link").css("display") === "none") {
+    if ($(".navToggle-linkToggle").css("display") === "none") {
       this.showMenu();
     } else {
       this.hideMenu();
@@ -16,17 +16,18 @@ class Dropdown {
   }
 
   showMenu() {
-    $(".nav-link").css({"display": "block"});
-    $(".navbar").css({"height": "200px"});
-    $("button.navbar-toggler").css({"position": "absolute", "margin-top": "-135px","zIndex":"100"});
-    $(".contentNav a.titre").css({"position": "absolute", "margin-top": "-135px"});
+    $(".navToggle-linkToggle").css({"display": "block"});
+    $(".navbarGenerale").css({"height": "200px"});
+    $("button.navbarToggle-toggler").css({"position": "absolute", "margin-top": "5px","zIndex":"100"});
+    $(".contentNav a.titre").css({"display": "none"});
   }
 
   hideMenu() {
-    $(".nav-link").css({"display": "none"});
-    $(".navbar").css({"height": "66px"});
-    $("button.navbar-toggler").css({"margin-top": "auto"});
-    $(".contentNav a.titre").css({"margin-top": "auto"});
+    $(".navToggle-linkToggle").css({"display": "none"});
+    $(".navbarGenerale").css({"height": "66px"});
+    $("button.navbarToggle-toggler").css({"margin-top": "inherit"});
+    $(".titreToggle").css({"display": "block"});
+    //$(".contentNav").css({"position": "absolute", "display":"block"});
   }
 }
 
