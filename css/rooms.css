@@ -2631,7 +2631,7 @@
   
   .ftco-bg-dark {
     background: #3c312e; }
-  
+  /*
   .ftco-footer {
     font-size: 16px;
     padding: 7em 0;
@@ -2684,7 +2684,7 @@
         transform: translate(-50%, -50%); }
       .ftco-footer-social li a:hover {
         color: #fff; }
-  
+  */
   #map {
     width: 100%; }
     @media (max-width: 991.98px) {
@@ -3336,32 +3336,41 @@ top:45%;
 right:0;
 }
 
-@-webkit-keyframes slidy{
-0%, 50%{left:0%}
-60%, 90%{left:-50%}
-100% {left:0%}
+/*----------------- FOOTER --------------------*/
+footer.footer{
+  height: 400px;
+  color: white;
+  margin-left: auto;
+  padding-top: 2%;
+  background-color: black;
 }
-@-moz-keyframes slidy{
-0%, 50%{left:0%}
-60%, 90%{left:-50%}
-100% {left:0%}
+.copyright{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-#timeline{
-position:absolute;
-z-index:6;
-background:#4bb1f2;
-left:0px;
-bottom:0px;
-height:5px;
-animation:timeliner 12s infinite;
+.row_footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
 }
 
-@-moz-keyframes timeliner{
-0% ,40%{width:750px;}
-50%, 100%{width:100%;}
+.fa-twitter,.fa-facebook, .fa-instagram {
+    font-size: 30px;
+    color: #f0f0f0 !important;
 }
-@-webkit-keyframes timeliner{
-0% ,40%{width:750px;}
-50%, 100%{width:100%;}
+.fa-location-dot,.fa-phone, .fa-envelope {
+  font-size: 30px;
+  color: #f0f0f0 !important;
+}
+footer a {
+  color: #f0f0f0 !important;
+}
+
+.container_footer{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
