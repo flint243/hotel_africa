@@ -42,11 +42,11 @@ function updateReservationSummary() {
     const timeDiff = departureDate.getTime() - arrivalDate.getTime();
     const nights = timeDiff / (1000 * 3600 * 24); // convert miliseconds to day
 
-    // Tarif par nuit 
+ 
     const ratePerAdult = 99.00;
     const ratePerChild = 49.50;
 
-    // Calculer le total
+   
     const total = (adults * ratePerAdult + children * ratePerChild + taxeSejour) * nights ;
 
     // Mettre à jour l'affichage
