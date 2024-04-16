@@ -372,9 +372,7 @@ font-size: 1.1rem;
   font-size: 4em;
   color: rgba(182, 145, 0, 0.8);
 }
-.icon.d-flex{
-  padding-bottom: 30px;
-}
+
 
 
 /****************************************************************************/
@@ -695,9 +693,43 @@ video img{
     color: #000000;
 }
 
+.crossModal{
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.201);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 5px 0;
+}
+.closeModal:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .modalInsta1 {
+  width: 100%;
+  position: absolute;
   display: none;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(128, 128, 128, 0.367);
+  z-index: 10;
   /* Other styles for modal */
+}
+.modalInstaIn1{
+  position: relative;
+  width: 700px;
+  height: 600px;
+  padding: 50px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(88, 85, 85);
+}
+.modalInstaIn1 img{
+  width: 100%;
+  height: auto;
 }
 
 .show-modal {
@@ -717,32 +749,96 @@ video img{
 
 
 .modalInsta2 {
+  width: 100%;
+  position: absolute;
   display: none;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(128, 128, 128, 0.367);
+  z-index: 10;
   /* Other styles for modal */
 }
-
-.show-moda2 {
+.modalInstaIn2{
+  position: relative;
+  width: 700px;
+  height: 600px;
+  padding: 50px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(88, 85, 85);
+}
+.modalInstaIn2 img{
+  width: 100%;
+  height: auto;
+}
+.show-modal2 {
   display: block;
   /* Additional styles for showing the modal, such as animation */
   animation: fadeIn 0.3s ease;
 }
 
+
+.modalInsta3 {
+  width: 100%;
+  position: absolute;
+  display: none;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(128, 128, 128, 0.367);
+  z-index: 10;
+  /* Other styles for modal */
+}
+.modalInstaIn3{
+  position: relative;
+  width: 700px;
+  height: 600px;
+  padding: 50px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(88, 85, 85);
+}
+.modalInstaIn3 img{
+  width: 100%;
+  height: auto;
+}
 .modalInsta3 {
   display: none;
   /* Other styles for modal */
 }
-
 .show-moda3 {
   display: block;
   /* Additional styles for showing the modal, such as animation */
   animation: fadeIn 0.3s ease;
 }
 
+
+.modalInsta4 {
+  width: 100%;
+  position: absolute;
+  display: none;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(128, 128, 128, 0.367);
+  z-index: 10;
+  /* Other styles for modal */
+}
+.modalInstaIn4{
+  position: relative;
+  width: 700px;
+  height: 600px;
+  padding: 50px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(88, 85, 85);
+}
+.modalInstaIn4 img{
+  width: 100%;
+  height: auto;
+}
 .modalInsta4 {
   display: none;
   /* Other styles for modal */
 }
-
 .show-moda4 {
   display: block;
   /* Additional styles for showing the modal, such as animation */
@@ -750,18 +846,34 @@ video img{
 }
 
 .modalInsta5 {
+  width: 100%;
+  position: absolute;
   display: none;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(128, 128, 128, 0.367);
+  z-index: 10;
   /* Other styles for modal */
 }
-
+.modalInstaIn5{
+  position: relative;
+  width: 700px;
+  height: 600px;
+  padding: 50px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(88, 85, 85);
+}
+.modalInstaIn5 img{
+  width: 100%;
+  height: auto;
+}
 .show-moda5 {
   display: block;
   /* Additional styles for showing the modal, such as animation */
   animation: fadeIn 0.3s ease;
 }
-.closeModal{
-  position: absolute;
-}
+
 .instagram{
   width: auto;
 }
