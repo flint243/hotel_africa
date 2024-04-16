@@ -861,9 +861,11 @@ footer a {
     color: white;
     z-index: 100;
   }
+  /*
   .navbarToggleGen{
     background-color: black;
   }
+  */
   .navbarToggle-toggler{
     position: absolute;
     display: block;

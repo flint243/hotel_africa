@@ -3339,7 +3339,7 @@ right:0;
 
 /*----------------- FOOTER --------------------*/
 footer{
-  height: 400px;
+  height: auto;
   color: white;
   margin-left: auto;
   padding: 20px;
