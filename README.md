@@ -1,8 +1,8 @@
-# Introduction
+### Introduction
 Ce projet est notre premier projet de travail d'équipe sur la plateforme Git et GitHub basé sur un maquette disponible pour un site web d'hôtel. 
 Nous avons intégré cinq pages incluant l'accueil, la chambre, la réservation, le paiement, et le contact, basées sur HTML, CSS, et JS.
 Toutes les pages sont responsives avec un menu burger.
-# Détail
+### Détail
 1. Page accueil (notre histoire)
 - Header: barre de navigation, Bannière déroulante, Bannière image
 - Main: Notre histoire, Nos inspirations, Nos services
