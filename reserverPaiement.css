@@ -181,9 +181,7 @@ header {
     z-index: 6;
     top: 0;
     left: 50%;
-    /* Déplacer vers 50% de la largeur de la fenêtre d’affichage à partir de la gauche */
     transform: translateX(-50%);
-    /* Décaler vers la gauche de 50% de sa propre width */
     width: 100%;
 }
 
@@ -422,7 +420,6 @@ header {
 /* Box felicitation */
 .felicite {
     position: fixed;
-    /* Fixed position to stay in place */
     left: 0;
     top: 0;
     width: 100%;
