@@ -22,6 +22,9 @@ input{
 h1, h2, h3, h4, h5{
   font-family: "Playfair Display", Arial, serif;
 }
+h3{
+  font-size: 1.75rem;
+}
 i{
   color: rgb(218, 190, 9);
   font-size: 3em;
@@ -799,7 +802,10 @@ footer{
   padding-top: 2%;
   background-color: black;
 }
-.text-center p{
+footer h3{
+  padding-bottom: 20px;
+}
+.copyright {
   position: relative;
   text-align: center;
   margin-top: 10%;
@@ -807,7 +813,7 @@ footer{
 .row_footer {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 50px;
+  justify-content: space-around;
 }
 
 .fa-twitter,.fa-facebook, .fa-instagram {
@@ -1055,12 +1061,11 @@ video {
 
 footer{
   height: 800px;
+  padding: 20px;
 }
 .row_footer {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 50px;
 }
-
-
 
 }
