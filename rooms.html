@@ -16,50 +16,58 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
 
     <link rel="stylesheet" href="css/rooms.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light"
-      id="ftco-navbar"
-    >
-      <div class="container">
-
-        <a class="navbar-brand" href="index.html">LiVanHotel</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-
-        <img src="fonts/svg/menu.svg"> Menu
-        </button>
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="reserver.html" class="nav-link">Réservation</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Se connecter</a>
-            </li>
-          </ul>
+    <header>
+    <nav  class="navbarGenerale">
+      <div class="navbarToggleGen">
+        <a class="titreToggle" href="index.html">LiVanHotel</a>
+            <button class="navbarToggle-toggler"type="button">
+              <i class="fa-solid fa-bars"></i>  Menu
+            </button>
+            <ul class="navbarToggle-navToggle ml-auto menuToggle">
+              <li class="navToggle-itemToggle">
+                <a href="index.html" class="navToggle-linkToggle">Accueil</a>
+              </li>
+              <li class="navToggle-itemToggle">
+                <a href="contact.html" class="navToggle-linkToggle">Contact</a>
+              </li>
+              <li class="navToggle-itemToggle">
+                <a href="reserver.html" class="navToggle-linkToggle">Réservation</a>
+              </li>
+              <li class="navToggle-itemToggle">
+                <a href="#" class="navToggle-linkToggle">Se connecter</a>
+              </li>
+            </ul>
         </div>
-      </div>
+        <!---->
+        <div class="contentNav">
+          <a class="titre" href="index.html">LiVanHotel</a>
+          <div class="NavInt">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="reserver.html" class="nav-link">Réservation</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Se connecter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
+  </header>
 
     <div
 
@@ -373,6 +381,7 @@
           </div>
       </div>
   </footer>
-
+  <script src="js/jquery.js"></script>
+  <script src="js/dropDownClass.js"></script>
   </body>
 </html>

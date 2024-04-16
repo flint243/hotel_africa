@@ -95,18 +95,7 @@ i.fa-bars{
 }
       .navbarToggleGen {
         position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
         justify-content: space-between;
-        padding: 1rem 0rem 1rem 1rem; 
         background-color: white;
       }
       a.titreToggle{
@@ -126,9 +115,7 @@ i.fa-bars{
     background-color: white;
     justify-content: space-around;
       }
-    .titreToggle{
-      display: none;
-    }
+    
     ul.navbar-nav{
       width: 120%;
       display: flex;
@@ -370,16 +357,25 @@ i.fa-bars{
   width: 200px;
   height: 150px;
   padding-top: 10px;
+  padding-bottom: 20px;
   align-self: center;
   background-color: #f8f9fa;
 }
 .visonSolo h3{
+  position: absolute;
+  bottom: 20px;
+  margin-left: 2%;
 font-family: "Playfair Display", Arial, serif;
+font-size: 1.1rem;
 }
 .visionLuxeIn span{
   font-size: 4em;
   color: rgba(182, 145, 0, 0.8);
 }
+.icon.d-flex{
+  padding-bottom: 30px;
+}
+
 
 /****************************************************************************/
 .half{
@@ -855,7 +851,7 @@ footer a {
 .contentNav a.titre{
   display: none;
 }
-  .titreToggle {
+  a.titreToggle {
     display: block;
     position: absolute;
     color: white;
@@ -918,7 +914,6 @@ footer a {
   .titreSlide1{
     font-size: 1.8em;
   }
-  
 
   .checks{
     width: 100%;
@@ -1062,7 +1057,7 @@ video {
 }
 
 footer{
-  height: 800px;
+  height: auto;
   padding: 20px;
 }
 .row_footer {
