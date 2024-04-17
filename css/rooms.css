@@ -3371,7 +3371,7 @@ ul.navbarToggle-navToggle.menuToggle{
   flex-direction: column;
   position: absolute;
   top: 40px;
-  left: 0px;
+  left: -35px;
 }
 ul.navbarToggle-navToggle a.navToggle-linkToggle{
   position: relative;
